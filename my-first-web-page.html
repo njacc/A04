@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- Denotes the document type the file is (html) -->
+<html lang="en"> <!-- Denotes this is the beginning tag for an html document, all html code will be inside -->
+<head> <!-- head element just houses whatever is metadata or links to css or js documents, or other imports -->
+    <meta charset="UTF-8"> <!-- indicates the character set for the browser to use -->
+    <title>My Website</title> <!-- is the webpage title in the tab bar -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- indicates the size of the page for the window -->
+    <style> /*An internal style tag, used to modify visuals inside of an html document instead of in an external doc*/
+        body { /*selector for the body element*/
+            margin: 0; /*sets margin of body element to 0*/
+            font-family: Arial, sans-serif; /*sets the font to Arial and font-family to sans-serif*/
+            display: flex; /*will make the body element 'flex' or scale according to window size*/
+            flex-direction: column; /*specifies how the display should scale/flex, here only scales the columns (horizontally)*/
+            min-height: 100vh; /*sets minimum height to 100% of the view port*/
+        }
+
+        header { /*selects the header element*/
+            background-color: #4CAF50; /*sets the background color to the hexadecimal value (green here)*/
+            color: white; /*sets the font color to indicated value (white here)*/
+            padding: 20px; /*sets the padding of the element to 20 pixels*/
+            text-align: center; /*aligns the text to the center of the element space*/
+        }
+
+        main { /*selects the main element*/
+            flex: 1; /*denotes how much the element will flex when it gets rescaled*/
+            padding: 20px; /*sets the padding to 20 pixels*/
+            text-align: center; /*aligns the text to the center of the element space*/
+        }
+
+        footer { /*selects the footer element*/
+            background-color: #222; /*sets the background color to the value (black here)*/
+            color: white; /*sets the font color to white*/
+            text-align: center; /*aligns the text to the center*/
+            padding: 15px 0; /*uses padding shorthand to set the padding of top and bottom to 15 pixels while the sides to 0*/
+        }
+    </style> <!-- end of css style tag-->
+</head> <!-- end of head tag -->
+<body> <!-- start of body tag, indicates whatever will be rendered to the page -->
+
+<header> <!-- is a header tag, for the top of the web page-->
+    <h1>Welcome to My Website</h1> <!--heading 1 element for largest heading text-->
+</header> <!--end of header tag-->
+
+<main> <!--main denotes the main content of the page-->
+    <h2> NJACC (pl327), IS117-002 </h2>
+    <p>This is a simple website template.</p> <!--standard paragraph tag, just has text inside of it-->
+</main> <!--closing main tag-->
+
+<footer> <!--footer tag denotes the footer of the page; the bottom-->
+    <p>&copy; 2026 My Website. All rights reserved.</p> <!--paragraph tag, again-->
+</footer> <!--closing of footer tag-->
+
+</body> <!--end of body tag-->
+</html> <!--end of html tag-->
